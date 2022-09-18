@@ -43,8 +43,17 @@ li {
   list-style: none;
 }
 /* Header and Navigation Bar */
+header {
+  background: url(./images/desktop/image-header.jpg) no-repeat center;
+  background-size: cover;
+  /* width: 100%; */
+  height: 110vh;
+}
+header .bg-img {
+  width: 100%;
+  object-fit: cover;
+}
 .nav-header {
-  background-image: url(./images/desktop/image-header.jpg);
   display: flex;
 }
 .nav-header .nav {
@@ -74,22 +83,78 @@ li {
   height: 35px;
 }
 @media screen and (max-width: 900px) {
- 
- .menu-bars {
-   position: fixed;
-   top:1rem;
-   right: 2rem;
-   z-index:10;
-   display: inline;
-   cursor: pointer;
- }
- .bar1,
- .bar2,
- .bar3 {
-  width: 35px;
-  height:2px;
-  background-color: #ffffff;
-  margin:8px 0;
-  transition: 0,4s;
- }
+  .nav {
+    position: fixed;
+    top: 20px;
+    right: 18px;
+    padding: 1rem;
+    width: 200px;
+    border-radius: 20px;
+    transform: translatex(-100vw);
+    z-index: 10;
+    background-color: var(--Soft-red);
+  }
+  .nav .nav-items {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    margin:  0 auto;
+  }
+  .nav ul li a {
+    margin:  10px auto;
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .overlay-slide-right {
+    transition: all 0.4s ease-in-out;
+    transform: translateY(1rem);
+  }
+  .overlay-slide-left {
+    width: 0;
+    transition: all 0.4s ease-in;
+    /* opacity: .6; */
+    transform: translateY(-50vw);
+  }
+
+  /*  Menu Bars */
+
+  .menu-bars {
+    position: fixed;
+    top: 2.5rem;
+    right: 2rem;
+    z-index: 10;
+    display: inline;
+    cursor: pointer;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px;
+    height: 2px;
+    background-color: #fff;
+    margin: 8px 0;
+    transition: 0.4s;
+  }
+
+  /* Rotate first bar */
+  .change .bar1 {
+    transform: rotate(-45deg) translate(-7px, 8px);
+  }
+
+  /* Fade out the second bar */
+  .change .bar2 {
+    opacity: 0;
+  }
+
+  /* Rotate last bar */
+  .change .bar3 {
+    transform: rotate(45deg) translate(-6px, -8px);
+  }
 }
