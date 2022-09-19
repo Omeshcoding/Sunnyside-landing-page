@@ -16,15 +16,15 @@ function toggleNav() {
   // Toggle: Menu Bars Open/Closed
   menuBar.classList.toggle('change');
   // Toggle: Menu Active
-  navMenu.classList.toggle('overlay-active');
-  if (navMenu.classList.contains('overlay-active')) {
-    navMenu.classList.replace('overlay-slide-left', 'overlay-slide-right');
+  navMenu.classList.toggle('menu-active');
+  if (navMenu.classList.contains('menu-active')) {
+    navMenu.classList.replace('menu-slide-up', 'menu-slide-down');
 
     // body.style.backgroundColor = 'rgba(0,0,0,0.6)';
 
     // Animate-In - Nav Items
   } else {
-    navMenu.classList.replace('overlay-slide-right', 'overlay-slide-left');
+    navMenu.classList.replace('menu-slide-down', 'menu-slide-up');
 
     // body.style.backgroundColor = '#fff';
   }
