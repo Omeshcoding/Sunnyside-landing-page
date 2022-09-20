@@ -64,20 +64,23 @@ header .bg-img {
   margin: 3.4rem 3.8rem;
 }
 .nav-items a {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
+  font-family: Barlow,sans-serif;
   color: var(--White);
-  margin-right: 3.4rem;
+  margin-right: 2.3rem;
   letter-spacing: 0.5px;
   padding: 0.8rem;
+
 }
 .nav-items a:hover {
   color: var(--Yellow);
-  font-size: 20.4px;
+  font-size: 18.2px;
 }
 .nav-items .nav-contact {
-  margin: 0rem;
+  margin-right: -1.5rem;
   /* background-color: #23303e; */
+  text-transform: uppercase;
   padding: 1rem 2rem;
   border-radius: 30px;
 }
@@ -100,10 +103,11 @@ header .bg-img {
 }
 .hero-title {
   color: #fff;
-  font-size: 3.7rem;
-  letter-spacing: 1rem;
+  font-size: 3.8rem;
+  letter-spacing: .6rem;
   text-transform: uppercase;
-  font-family: Barlow, sans-serif;
+  font-family: Fraunces, sans-serif;
+  font-weight:900;
 }
 .hero img {
   margin-top: 4.19rem;
@@ -120,24 +124,30 @@ header .bg-img {
 .services-content {
   position: relative;
   margin: 0 1rem;
+  display: flex;
+  flex-direction:column;
+  align-self: center;
+  justify-self: center;
   font-family: Fraunces, sans-serif;
-  padding: 8rem 7rem;
-  margin-left: 3.9rem;
+  /* padding: 8rem 7.7rem; */
+  margin-left: 10.9rem;
   letter-spacing: 0.6px;
 }
 .services-content h2 {
-  font-size: 2.9rem;
+  max-width: 400px;
+  font-size: 2.7rem;
+  font-weight: 700;
 }
 .services-content p {
-  /* width: 100%; */
+  width: 71%;
   font-size: 18px;
   line-height: 1.5;
   color: #a7abae;
-  font-weight: 500;
+  font-family: Barlow, sans-serif;
 }
 .services-content a {
-  font-size: 1.3rem;
-  font-weight: 900;
+  font-size: 1rem;
+  font-weight: 700;
   text-transform: uppercase;
   padding: 0.5rem 0;
   color: #000;
@@ -156,9 +166,12 @@ header .bg-img {
 .hr-line:hover {
   background-color: #fad400;
 }
-.services img{
-  width: 100%;
-  object-fit: cover;
+.transform-img{
+  background: url('./images/desktop/image-transform.jpg') no-repeat;
+  min-width: 50%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
 }
 
 
@@ -169,8 +182,12 @@ header .bg-img {
   overflow: hidden;
   height: 83.5vh;
 }
-.stand-out img{
-  order: 1;
+.standout-img{
+  background: url('./images/desktop/image-stand-out.jpg');
+   min-width: 50%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
 }
 /* ==========Media Query=========== */
 @media screen and (max-width: 900px) {
