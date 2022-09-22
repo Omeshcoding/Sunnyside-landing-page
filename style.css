@@ -270,7 +270,7 @@ header .bg-img {
 /* ========Testimonials======== */
 .testimonial {
   padding: 8rem 10rem;
-  height: 70vh;
+  height: 71vh;
   text-align: center;
 }
 .testimonial h3 {
@@ -306,6 +306,22 @@ p {
 .feedback-content small {
   font-family: Barlow, sans-serif;
   color: var(--Grayish-blue);
+}
+
+/* =========Projects Section========= */
+.project-section{
+  display: flex;
+  /* flex-direction: row; */
+}
+.projects {
+  width:50%;
+  display: flex;
+  flex-direction: row;
+}
+.project-img {
+  width: 50%;
+  background-position: center;
+  background-size: cover;
 }
 /* ==========Media Query=========== */
 @media screen and (max-width: 900px) {
@@ -427,20 +443,28 @@ p {
   }
   /* ======= Testimonial ========= */
   .testimonial {
-    padding: 4rem;
+    height: 160vh;
+    padding:1.5rem .5rem;
   }
   .testimonial .feedback {
     display: flex;
     flex-direction: column;
     /* gap: 0.5rem; */
   }
-  .feedback-content {
-    /* width:80%; */
+  .feedback-content  .profile-img{
+    width:10%;
+    margin-bottom: 0;
   }
+  .feedback-content p{
+    width:100%;
+    margin-bottom: 0;
+  }
+  /* =========Projects Section========= */
+.project-section{
+  display: flex;
+  flex-direction:column;
 }
-
-/* @media screen and (min-width:700px){
-  .hero img{
-    margin-top: 15rem;
-  } 
-} */
+.projects {
+  width:100%;
+}
+}
