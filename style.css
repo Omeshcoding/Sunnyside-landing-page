@@ -309,12 +309,12 @@ p {
 }
 
 /* =========Projects Section========= */
-.project-section{
+.project-section {
   display: flex;
   /* flex-direction: row; */
 }
 .projects {
-  width:50%;
+  width: 50%;
   display: flex;
   flex-direction: row;
 }
@@ -323,6 +323,45 @@ p {
   background-position: center;
   background-size: cover;
 }
+
+/* =========Footer Section========= */
+.footer {
+  height: 24vh;
+  background: rgb(132, 222, 204);
+  text-align: center;
+  padding: 6rem 0;
+}
+.footer-logo {
+  width: 190px;
+  margin-bottom: 2.7rem;
+}
+.footer-menu a {
+  font-size: 1.2rem;
+  font-family:Barlow, sans-serif;
+  font-weight: 700;
+  margin: 2rem;
+  color: #458c7e;
+}
+.footer-content {
+  margin-bottom: 6rem;
+}
+.footer-socials a {
+  margin: 0.9rem;
+}
+.footer-socials a img:hover {
+  filter:  brightness(0) invert(1);
+}
+.footer-content a:hover {
+  color: #fff;
+}
+/* ======To-Top======= */
+/* .to-top{
+  position: fixed;
+  z-index: 9999;
+  bottom:20px;
+  right:30px;
+} */
+
 /* ==========Media Query=========== */
 @media screen and (max-width: 900px) {
   header {
@@ -444,27 +483,32 @@ p {
   /* ======= Testimonial ========= */
   .testimonial {
     height: 160vh;
-    padding:1.5rem .5rem;
+    padding: 1.5rem 0.5rem;
   }
   .testimonial .feedback {
     display: flex;
     flex-direction: column;
     /* gap: 0.5rem; */
   }
-  .feedback-content  .profile-img{
-    width:10%;
+  .feedback-content .profile-img {
+    width: 10%;
     margin-bottom: 0;
   }
-  .feedback-content p{
-    width:100%;
+  .feedback-content p {
+    width: 100%;
     margin-bottom: 0;
   }
   /* =========Projects Section========= */
-.project-section{
-  display: flex;
-  flex-direction:column;
-}
-.projects {
-  width:100%;
-}
+  .project-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .projects {
+    width: 100%;
+  }
+  /* ==========Footer========== */
+  .footer-menu a {
+    font-size: 16px;
+    margin:1.7rem;
+  }
 }
